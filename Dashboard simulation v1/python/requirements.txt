@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+tensorflow>=2.19
+tf_keras>=2.19          # REQUIRED -- see model.py's TF_USE_LEGACY_KERAS note.
+                         # tensorflow-model-optimization (QAT) does not support
+                         # Keras 3's model classes as of tfmot 0.8.1; every
+                         # entry-point script forces the legacy Keras 2 API via
+                         # this package before importing tensorflow.
+tensorflow-model-optimization>=0.8.1
+matplotlib>=3.7
